@@ -13,11 +13,11 @@
 
 <body>
 
-   <section>
+   <section id="shopping-cart-area">
       <div class="container">
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
+               <div id="phone" class="cart-item">
                   <div class="row">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
@@ -26,17 +26,19 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="phone-minus-btn" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input type="text" id="phone-item" class="form-control text-center" value="1">
+                           <button id="phone-plus-btn" class="btn btn-default"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <h5>$<span id="phone-price">1219</span></h5>
+                        <button id="phone-cancel-btn" class="cancel-btn">
+                           <img src="images/remove.png" alt="" class="remove-item">
+                        </button>
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div id="case" class="cart-item">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
@@ -44,13 +46,15 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="case-minus-btn" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input type="text" id="case-item" class="form-control text-center" value="1">
+                           <button id="case-plus-btn" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$59</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <h5>$<span id="case-price">59</span></h5>
+                        <button id="case-cancel-btn" class="cancel-btn">
+                           <img src="images/remove.png" alt="" class="remove-item">
+                        </button>
                      </div>
                   </div>
                </div>
@@ -60,22 +64,28 @@
 
                      <div class="col-md-8">
                         <h5>Subtotal: </h5>
-                        <h5>Tax:</h5>
+                        <h5>Tax (10%):</h5>
                         <h5>Total:</h5>
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$ <span id="sub-total">1,278</span></h5>
+                        <h5>$ <span id="tax">128</span></h5>
+                        <h5>$ <span id="total">1,278</span></h5>
                      </div>
                   </div>
                </div>
                <div class="col-md-12 pt-4 pb-4">
-                  <button type="button" class="btn btn-success check-out">Check Out</button>
+                  <button type="button" id="checkout-btn" class="btn btn-success check-out">Check Out</button>
                </div>
             </div>
          </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="container">
+         <h4 class="text-center pt-5">Thanks for stay with us.</h>
       </div>
    </section>
 

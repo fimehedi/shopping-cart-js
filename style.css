@@ -53,3 +53,8 @@ body{
 	background-color: #2FBE70;
 	border: none;
 }
+
+.cancel-btn{
+	border: none;
+	background-color: white;
+}
