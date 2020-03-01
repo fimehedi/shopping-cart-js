@@ -49,10 +49,8 @@ caseItemDec.addEventListener("click", function(){
 // Check Out Button Event Handler 
 const checkoutBtn = document.getElementById("checkout-btn");
 checkoutBtn.addEventListener("click", function() {
-    cartArea = document.getElementById("shopping-cart-area");
-    cartArea.style.display = "none";
     alert("Your checkout done!");
-
+    location.reload();
 })
 
 
